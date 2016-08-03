@@ -143,26 +143,26 @@
             this.txtUrunKodu2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tpStokSorgulama = new System.Windows.Forms.TabPage();
-            this.txtToplamTutar = new System.Windows.Forms.TextBox();
-            this.txtToplamMiktar = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.cbKategori = new System.Windows.Forms.ComboBox();
-            this.rbTumUrunler = new System.Windows.Forms.RadioButton();
-            this.rbKritikSeviye = new System.Windows.Forms.RadioButton();
-            this.dgvUrunler = new System.Windows.Forms.DataGridView();
             this.tpKategoriler = new System.Windows.Forms.TabPage();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.slblKullanici = new System.Windows.Forms.ToolStripStatusLabel();
             this.slblMesaj = new System.Windows.Forms.ToolStripStatusLabel();
             this.slblDate = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cbKategori = new System.Windows.Forms.ComboBox();
+            this.rbTumUrunler = new System.Windows.Forms.RadioButton();
+            this.rbKritikSeviye = new System.Windows.Forms.RadioButton();
+            this.dgvUrunler = new System.Windows.Forms.DataGridView();
+            this.txtToplamMiktar = new System.Windows.Forms.TextBox();
+            this.txtToplamTutar = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpUrunKartlari.SuspendLayout();
             this.tpStokGirisCikis.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tpStokSorgulama.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -225,8 +225,8 @@
             // lblKullanici
             // 
             this.lblKullanici.Name = "lblKullanici";
-            this.lblKullanici.Size = new System.Drawing.Size(72, 23);
-            this.lblKullanici.Text = "Uğur GÜR";
+            this.lblKullanici.Size = new System.Drawing.Size(99, 23);
+            this.lblKullanici.Text = "Erkan Hoyman";
             // 
             // toolStripSeparator3
             // 
@@ -258,7 +258,7 @@
             this.tsYeni.Image = ((System.Drawing.Image)(resources.GetObject("tsYeni.Image")));
             this.tsYeni.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsYeni.Name = "tsYeni";
-            this.tsYeni.Size = new System.Drawing.Size(54, 23);
+            this.tsYeni.Size = new System.Drawing.Size(55, 23);
             this.tsYeni.Text = "&Yeni";
             this.tsYeni.Click += new System.EventHandler(this.tsYeni_Click);
             // 
@@ -335,7 +335,7 @@
             this.tsVazgec.Image = ((System.Drawing.Image)(resources.GetObject("tsVazgec.Image")));
             this.tsVazgec.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsVazgec.Name = "tsVazgec";
-            this.tsVazgec.Size = new System.Drawing.Size(71, 23);
+            this.tsVazgec.Size = new System.Drawing.Size(72, 23);
             this.tsVazgec.Text = "&Vazgeç";
             this.tsVazgec.Click += new System.EventHandler(this.tsVazgec_Click);
             // 
@@ -1129,21 +1129,46 @@
             this.tpStokSorgulama.TabIndex = 2;
             this.tpStokSorgulama.Text = "Stok Sorgulama";
             // 
-            // txtToplamTutar
+            // tpKategoriler
             // 
-            this.txtToplamTutar.Location = new System.Drawing.Point(780, 338);
-            this.txtToplamTutar.Name = "txtToplamTutar";
-            this.txtToplamTutar.Size = new System.Drawing.Size(100, 23);
-            this.txtToplamTutar.TabIndex = 11;
-            this.txtToplamTutar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tpKategoriler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tpKategoriler.Location = new System.Drawing.Point(4, 25);
+            this.tpKategoriler.Name = "tpKategoriler";
+            this.tpKategoriler.Size = new System.Drawing.Size(907, 408);
+            this.tpKategoriler.TabIndex = 3;
+            this.tpKategoriler.Text = "Kategoriler";
             // 
-            // txtToplamMiktar
+            // statusStrip1
             // 
-            this.txtToplamMiktar.Location = new System.Drawing.Point(678, 339);
-            this.txtToplamMiktar.Name = "txtToplamMiktar";
-            this.txtToplamMiktar.Size = new System.Drawing.Size(100, 23);
-            this.txtToplamMiktar.TabIndex = 10;
-            this.txtToplamMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.slblKullanici,
+            this.slblMesaj,
+            this.slblDate});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 468);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(915, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // slblKullanici
+            // 
+            this.slblKullanici.Name = "slblKullanici";
+            this.slblKullanici.Size = new System.Drawing.Size(85, 17);
+            this.slblKullanici.Text = "Erkan Hoyman";
+            // 
+            // slblMesaj
+            // 
+            this.slblMesaj.Name = "slblMesaj";
+            this.slblMesaj.Size = new System.Drawing.Size(736, 17);
+            this.slblMesaj.Spring = true;
+            this.slblMesaj.Text = "Ürün Kartları açabilir, güncelleme yapabilirsiniz.";
+            // 
+            // slblDate
+            // 
+            this.slblDate.Name = "slblDate";
+            this.slblDate.Size = new System.Drawing.Size(79, 17);
+            this.slblDate.Text = "28 Nisan 2016";
             // 
             // label19
             // 
@@ -1202,46 +1227,21 @@
             this.dgvUrunler.Size = new System.Drawing.Size(856, 224);
             this.dgvUrunler.TabIndex = 5;
             // 
-            // tpKategoriler
+            // txtToplamMiktar
             // 
-            this.tpKategoriler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tpKategoriler.Location = new System.Drawing.Point(4, 25);
-            this.tpKategoriler.Name = "tpKategoriler";
-            this.tpKategoriler.Size = new System.Drawing.Size(907, 408);
-            this.tpKategoriler.TabIndex = 3;
-            this.tpKategoriler.Text = "Kategoriler";
+            this.txtToplamMiktar.Location = new System.Drawing.Point(678, 339);
+            this.txtToplamMiktar.Name = "txtToplamMiktar";
+            this.txtToplamMiktar.Size = new System.Drawing.Size(100, 23);
+            this.txtToplamMiktar.TabIndex = 10;
+            this.txtToplamMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // statusStrip1
+            // txtToplamTutar
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.slblKullanici,
-            this.slblMesaj,
-            this.slblDate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 468);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(915, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // slblKullanici
-            // 
-            this.slblKullanici.Name = "slblKullanici";
-            this.slblKullanici.Size = new System.Drawing.Size(59, 17);
-            this.slblKullanici.Text = "Uğur GÜR";
-            // 
-            // slblMesaj
-            // 
-            this.slblMesaj.Name = "slblMesaj";
-            this.slblMesaj.Size = new System.Drawing.Size(731, 17);
-            this.slblMesaj.Spring = true;
-            this.slblMesaj.Text = "Ürün Kartları açabilir, güncelleme yapabilirsiniz.";
-            // 
-            // slblDate
-            // 
-            this.slblDate.Name = "slblDate";
-            this.slblDate.Size = new System.Drawing.Size(79, 17);
-            this.slblDate.Text = "28 Nisan 2016";
+            this.txtToplamTutar.Location = new System.Drawing.Point(780, 338);
+            this.txtToplamTutar.Name = "txtToplamTutar";
+            this.txtToplamTutar.Size = new System.Drawing.Size(100, 23);
+            this.txtToplamTutar.TabIndex = 11;
+            this.txtToplamTutar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // UrunIslemleri
             // 
@@ -1266,9 +1266,9 @@
             this.groupBox1.PerformLayout();
             this.tpStokSorgulama.ResumeLayout(false);
             this.tpStokSorgulama.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

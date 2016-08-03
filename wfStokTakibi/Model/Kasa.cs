@@ -87,12 +87,12 @@ namespace wfStokTakibi.Model
                 {
                     while (dr.Read())
                     {
-                        DevirGiren.Text = dr["ToplamGiren"].ToString();
-                        DevirCikan.Text = dr["ToplamCikan"].ToString();
-                        DevirBakiye.Text = dr["Bakiye"].ToString();
-                        //DevirGiren.Text = String.Format("{0:#,##0.00}", Convert.ToDouble(dr["ToplamGiren"]));
-                        //DevirCikan.Text = String.Format("{0:#,##0.00}", Convert.ToDouble(dr["ToplamCikan"]));
-                        //DevirBakiye.Text = String.Format("{0:#,##0.00}", Convert.ToDouble(dr["Bakiye"]));
+                        //DevirGiren.Text = dr["ToplamGiren"].ToString();
+                        //DevirCikan.Text = dr["ToplamCikan"].ToString();
+                        //DevirBakiye.Text = dr["Bakiye"].ToString();
+                        DevirGiren.Text = String.Format("{0:#,##0.00}", Convert.ToDouble(dr["ToplamGiren"]));
+                        DevirCikan.Text = String.Format("{0:#,##0.00}", Convert.ToDouble(dr["ToplamCikan"]));
+                        DevirBakiye.Text = String.Format("{0:#,##0.00}", Convert.ToDouble(dr["Bakiye"]));
                     }
                     dr.Close();
                 }

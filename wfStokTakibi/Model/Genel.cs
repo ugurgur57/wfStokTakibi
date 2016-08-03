@@ -8,7 +8,7 @@ namespace wfStokTakibi.Model
 {
     class Genel
     {
-        public static string connStr = "Data Source=HP; Initial Catalog=Stok; uid=sa; pwd=123458";
+        public static string connStr = "Data Source=WISSEN22\\MSSQLYAZ8; Initial Catalog=Stok; uid=sa; pwd=123458";
         public static string caritipi;
         public static int carino = 0;
         public static string cariunvan;
